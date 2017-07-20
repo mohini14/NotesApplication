@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  NotesApplication
+
+  Created by Mohini Sindhu  on 20/07/17.
+  Copyright © 2017 Mohini Sindhu . All rights reserved.
+*/
+
+// MARK: MonthViewController Strings
+"Month List" = "Month List";
