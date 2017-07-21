@@ -38,7 +38,13 @@
                             <constraint firstItem="BSB-NQ-R3V" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="mnp-ug-uqG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="alW-cW-72W"/>
+                    <navigationItem key="navigationItem" id="alW-cW-72W">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="aqQ-O7-k7L">
+                            <connections>
+                                <action selector="addNewMonthButtonPressed:" destination="BYZ-38-t0r" id="KVF-7N-Pxt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="monthTableView" destination="BSB-NQ-R3V" id="f7a-eP-peG"/>
                     </connections>

@@ -27,10 +27,7 @@ class MonthTabelCell: UITableViewCell
 	
 	public func setCellProperties(_ monthNameForNotes : String)
 	{
-		
-		if self.monthName != nil
-		{
 			self.monthName.text = monthNameForNotes;
-		}
+	
 	}
 }

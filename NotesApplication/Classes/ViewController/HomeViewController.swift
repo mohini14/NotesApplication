@@ -35,8 +35,8 @@ class HomeViewController: UIViewController ,UITableViewDataSource
 	{
 		title = NSLocalizedString("Month List", comment: "")
 	
-		monthTableView.register(MonthTabelCell.self,
-		                        forCellReuseIdentifier:Define.TableCellIdentifier.kMonthTableCell);
+		// register table cell NIB
+		monthTableView.register(UINib(nibName: Define.TableCellXIBNmae.kMonthTableCellXIBName, bundle:Bundle.main) , forCellReuseIdentifier: Define.TableCellIdentifier.kMonthTableCell)
 	}
 	
 	
@@ -54,5 +54,11 @@ class HomeViewController: UIViewController ,UITableViewDataSource
 		return cell
 	}
 
+	// MARK: Actions on VC
+	@IBAction func addNewMonthButtonPressed(_ sender: UIBarButtonItem)
+    {
+
+		
+	}
 }
 

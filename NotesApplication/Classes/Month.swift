@@ -10,7 +10,7 @@ import UIKit
 
 class Month: NSObject
 {
-	var monthName : String?
+	var monthName : String!
 	
 
 }

@@ -8,3 +8,6 @@
 
 // MARK: MonthViewController Strings
 "Month List" = "Month List";
+
+// Utils Strings
+"ALert" ="ALert";

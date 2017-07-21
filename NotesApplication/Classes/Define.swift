@@ -13,7 +13,11 @@ struct Define
 	{
 		static  let  kMonthTableCell = "MonthTableCell"
 	}
-
+	
+	struct TableCellXIBNmae
+	{
+		static let kMonthTableCellXIBName = "MonthTableCell"
+	}
 }
 
 //let define = Define()
