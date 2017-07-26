@@ -18,6 +18,20 @@ struct Define
 	{
 		static let kMonthTableCellXIBName = "MonthTableCell"
 	}
+	
+	struct CoreDataKeys
+	{
+		struct MonthKey
+		{
+			static let kMonthKey = "Month"
+			static let kMonthNameKey = "MonthName"
+		}
+	}
+	
+	struct SegueIdentifiers
+    {
+		static let kHomeToNOtesVC = "HomeToNotesVC"
+	}
 }
 
 //let define = Define()

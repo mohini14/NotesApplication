@@ -46,12 +46,41 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addNewMonthButton" destination="aqQ-O7-k7L" id="iSZ-uo-vSJ"/>
                         <outlet property="monthTableView" destination="BSB-NQ-R3V" id="f7a-eP-peG"/>
+                        <segue destination="5B5-Zv-QyB" kind="show" identifier="HomeToNotesVC" id="agw-cX-g9O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1056.8" y="123.68815592203899"/>
+        </scene>
+        <!--Notes View Controller-->
+        <scene sceneID="diA-fg-7ZS">
+            <objects>
+                <viewController id="5B5-Zv-QyB" customClass="NotesViewController" customModule="NotesApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0zs-nb-vva"/>
+                        <viewControllerLayoutGuide type="bottom" id="1cb-vx-Mdr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iiq-aD-Bsv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="DNl-tR-AqF">
+                        <barButtonItem key="rightBarButtonItem" title="add a note" id="YEq-x5-v5j">
+                            <connections>
+                                <action selector="addNewNoteButtonPressed:" destination="5B5-Zv-QyB" id="Afv-b3-F04"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fNo-oa-Cl1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1879" y="116"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XVJ-bv-wRE">

@@ -11,74 +11,75 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <viewController id="TFa-pB-eqH" customClass="AddNewMonthView" customModule="NotesApplication" customModuleProvider="target">
-            <layoutGuides>
-                <viewControllerLayoutGuide type="top" id="ieq-Av-eqc"/>
-                <viewControllerLayoutGuide type="bottom" id="uHP-TX-Qmk"/>
-            </layoutGuides>
-            <view key="view" contentMode="scaleToFill" id="0ZL-am-UxE">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o6c-QC-r7p">
-                        <rect key="frame" x="67" y="233" width="240" height="200"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDa-4Z-dgB">
-                                <rect key="frame" x="10" y="140" width="220" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="kM5-sP-QGj"/>
-                                </constraints>
-                                <state key="normal" title="SUBMIT"/>
-                                <connections>
-                                    <action selector="addNewMonthButtonPressed:" destination="TFa-pB-eqH" eventType="touchUpInside" id="aRC-TE-DDH"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZH-Mq-4vH">
-                                <rect key="frame" x="50" y="180" width="140" height="10"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="10" id="Vat-Rs-tSX"/>
-                                </constraints>
-                                <state key="normal" title="cancel"/>
-                                <connections>
-                                    <action selector="cancelButtonPressed:" destination="TFa-pB-eqH" eventType="touchUpInside" id="cVh-me-wcL"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.90191346409999995" green="0.90199369190000001" blue="0.90184646840000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="NDa-4Z-dgB" secondAttribute="trailing" constant="10" id="1gg-ox-eSb"/>
-                            <constraint firstItem="OZH-Mq-4vH" firstAttribute="leading" secondItem="o6c-QC-r7p" secondAttribute="leading" constant="50" id="2QN-fx-gdz"/>
-                            <constraint firstAttribute="bottom" secondItem="OZH-Mq-4vH" secondAttribute="bottom" constant="10" id="8ov-jJ-POf"/>
-                            <constraint firstAttribute="width" constant="240" id="C9n-RT-NLl"/>
-                            <constraint firstAttribute="trailing" secondItem="OZH-Mq-4vH" secondAttribute="trailing" constant="50" id="On3-wm-hUw"/>
-                            <constraint firstItem="NDa-4Z-dgB" firstAttribute="leading" secondItem="o6c-QC-r7p" secondAttribute="leading" constant="10" id="VWN-98-h2p"/>
-                            <constraint firstAttribute="height" constant="200" id="jfp-Nt-SZq"/>
-                            <constraint firstAttribute="bottom" secondItem="NDa-4Z-dgB" secondAttribute="bottom" constant="30" id="yFh-uo-JrK"/>
-                        </constraints>
-                    </view>
-                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MonthName Here!!!!!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KLe-05-Juy">
-                        <rect key="frame" x="87" y="308" width="200" height="50"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="50" id="0KC-Ql-n9R"/>
-                            <constraint firstAttribute="width" constant="200" id="jsc-V3-Stp"/>
-                        </constraints>
-                        <nil key="textColor"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
-                    </textField>
-                </subviews>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                <constraints>
-                    <constraint firstItem="o6c-QC-r7p" firstAttribute="centerY" secondItem="0ZL-am-UxE" secondAttribute="centerY" id="BQk-RW-9eg"/>
-                    <constraint firstItem="o6c-QC-r7p" firstAttribute="centerX" secondItem="0ZL-am-UxE" secondAttribute="centerX" id="ZDt-7z-9zX"/>
-                    <constraint firstItem="KLe-05-Juy" firstAttribute="centerY" secondItem="o6c-QC-r7p" secondAttribute="centerY" id="rgW-BW-Hlz"/>
-                    <constraint firstItem="KLe-05-Juy" firstAttribute="centerX" secondItem="o6c-QC-r7p" secondAttribute="centerX" id="uLc-34-2oc"/>
-                </constraints>
-            </view>
+        <view contentMode="scaleToFill" id="6PO-De-SZo" userLabel="MainView" customClass="AddNewMonth" customModule="NotesApplication" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o2u-33-QK8">
+                    <rect key="frame" x="67.5" y="233.5" width="240" height="200"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lim-wg-6zb">
+                            <rect key="frame" x="10" y="140" width="220" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="zdG-1R-tLb"/>
+                            </constraints>
+                            <state key="normal" title="SUBMIT"/>
+                            <connections>
+                                <action selector="submitButtonPressed:" destination="6PO-De-SZo" eventType="touchUpInside" id="MqT-hH-a9o"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPP-0H-BEJ">
+                            <rect key="frame" x="50" y="180" width="140" height="10"/>
+                            <gestureRecognizers/>
+                            <state key="normal" title="cancel"/>
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="6PO-De-SZo" eventType="touchUpInside" id="wNH-GA-qO8"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MonthName Here!!!!!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OTd-2f-7wk">
+                            <rect key="frame" x="20" y="75" width="200" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="KLm-FQ-vRt"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90191346409999995" green="0.90199369190000001" blue="0.90184646840000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Lim-wg-6zb" secondAttribute="trailing" constant="10" id="CzC-Xl-8Iu"/>
+                        <constraint firstItem="OTd-2f-7wk" firstAttribute="leading" secondItem="o2u-33-QK8" secondAttribute="leading" constant="20" id="Dgr-uL-RTT"/>
+                        <constraint firstItem="Lim-wg-6zb" firstAttribute="top" secondItem="OTd-2f-7wk" secondAttribute="bottom" constant="15" id="K2X-pf-D67"/>
+                        <constraint firstItem="BPP-0H-BEJ" firstAttribute="leading" secondItem="o2u-33-QK8" secondAttribute="leading" constant="50" id="KkI-8c-oVG"/>
+                        <constraint firstAttribute="bottom" secondItem="BPP-0H-BEJ" secondAttribute="bottom" constant="10" id="Xeb-gK-5ex"/>
+                        <constraint firstAttribute="width" constant="240" id="ZC9-8G-2zU"/>
+                        <constraint firstItem="OTd-2f-7wk" firstAttribute="centerX" secondItem="o2u-33-QK8" secondAttribute="centerX" id="bwp-3e-o22"/>
+                        <constraint firstItem="OTd-2f-7wk" firstAttribute="top" secondItem="o2u-33-QK8" secondAttribute="top" constant="75" id="er7-tR-23f"/>
+                        <constraint firstAttribute="height" constant="200" id="ib8-H3-cga"/>
+                        <constraint firstAttribute="trailing" secondItem="BPP-0H-BEJ" secondAttribute="trailing" constant="50" id="npm-kH-Pch"/>
+                        <constraint firstItem="BPP-0H-BEJ" firstAttribute="top" secondItem="Lim-wg-6zb" secondAttribute="bottom" constant="10" id="qI9-5a-mOO"/>
+                        <constraint firstItem="Lim-wg-6zb" firstAttribute="leading" secondItem="o2u-33-QK8" secondAttribute="leading" constant="10" id="sXT-bw-zIi"/>
+                        <constraint firstAttribute="trailing" secondItem="OTd-2f-7wk" secondAttribute="trailing" constant="20" id="sfc-VN-N5E"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="o2u-33-QK8" firstAttribute="centerX" secondItem="6PO-De-SZo" secondAttribute="centerX" id="FER-nj-Ds4"/>
+                <constraint firstItem="o2u-33-QK8" firstAttribute="centerY" secondItem="6PO-De-SZo" secondAttribute="centerY" id="NW7-nT-RT3"/>
+            </constraints>
             <connections>
-                <outlet property="monthTextField" destination="KLe-05-Juy" id="N5w-qi-Shd"/>
+                <outlet property="monthTextField" destination="OTd-2f-7wk" id="zbb-59-91X"/>
+                <outletCollection property="gestureRecognizers" destination="v8e-HN-yQ2" appends="YES" id="jet-UG-l04"/>
             </connections>
-            <point key="canvasLocation" x="-83" y="-42"/>
-        </viewController>
+            <point key="canvasLocation" x="156" y="34"/>
+        </view>
+        <tapGestureRecognizer id="v8e-HN-yQ2">
+            <connections>
+                <action selector="dissmissSubViews" destination="6PO-De-SZo" id="s73-QJ-8NE"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
 </document>
